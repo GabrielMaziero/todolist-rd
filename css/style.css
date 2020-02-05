@@ -1,0 +1,33 @@
+#navbar{
+    background-color: cadetblue;
+}
+
+#tarefa-digitada{
+    width: 45%;
+}
+
+.card-tarefa{
+    height:6rem;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow:1px 7px 7px -7px; */
+    border: 1px solid;
+    border-radius: 30px 20px;
+    padding: 30px 20px;
+
+}
+
+.img-Add{
+    width:32px;
+    margin-left: 20px;
+}
+
+footer{
+    background-color: cadetblue;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    bottom: 0;
+}
