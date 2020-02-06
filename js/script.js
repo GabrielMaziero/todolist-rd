@@ -1,11 +1,15 @@
 let btnAdd = document.querySelector("#adicionar-tarefa");
 let divTarefas = document.querySelector("#tarefas");
 let inputTarefa = document.querySelector("#tarefa-digitada");
+let btnCheck = document.querySelector(".botao-tarefa");
+
+btnAdd.style.cursor = "pointer";
+btnCheck.style.cursor = "pointer";
 
 inputTarefa.focus();
 
 
-btnAdd.onclick = function adicionar() {
+btnAdd.onclick = function() {
     let valorDigitado = inputTarefa.value
 
     let tarefaNova = `<div class="col-md-4">
@@ -22,4 +26,8 @@ btnAdd.onclick = function adicionar() {
     divTarefas.innerHTML += tarefaNova
     inputTarefa.value = ""
     inputTarefa.focus();
+}
+
+btnCheck.onclick = function(){
+    alert("Funciona")
 }
